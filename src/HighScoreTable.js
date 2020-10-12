@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import PlayerScore from "./PlayerScore";
 import scores from "./scores";
 import SortButton from "./SortButton";
@@ -6,25 +6,26 @@ function HighScoreTable(props) {
 	const cont = scores;
 
 	const allCountryScores = cont.sort((a, b) => a.name.localeCompare(b.name));
-	const currentScoresOrder = allCountryScores.map(function (ele) {
+/*	const currentScoresOrder = allCountryScores.map(function (ele) {
 		return ele.scores;
 	});
-	console.log(currentScoresOrder);
+	//console.log(currentScoresOrder);
 	const [scoresOrder1, setScoresOrder] = useState(currentScoresOrder);
-	console.log(scoresOrder1);
-
+	//console.log(scoresOrder1);
+*/
 	function changeSorting() {
-		console.log("change sorting is called");
+        console.log("change sorting is called");
+        
 	}
 
 	return (
 		<div>
-			<SortButton handel />
+            <SortButton onClick={changeSorting} />
 			{allCountryScores.map((country) => {
 				return (
 					<table>
 						<tr>
-							<th>HIGH SCORES : {country.name} </th>
+							<th >HIGH SCORES : {country.name} </th>
 						</tr>
 
 						{country.scores
