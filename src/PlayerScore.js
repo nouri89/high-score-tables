@@ -2,9 +2,27 @@ import React from "react";
 
 function PlayerScore(props) {
 	return (
-		<div className="playerScore" style={{ display: "flex" }}>
-			<h4>{props.pName}</h4>
-			<h3 style={{ color: "red", paddingLeft: "50px" }}>{props.pScore}</h3>
+		<div
+			className="playerScore"
+			style={{
+				position: "relative",
+			}}
+		>
+			<h4 style={{  position: "absolute",left:"0px" }}>
+				{props.pName}
+			</h4>
+			<h4
+				style={{
+					position: "absolute",
+					right:"-316px",
+					color: "red",
+					
+				
+					
+				}}
+			>
+				{props.pScore}
+			</h4>
 		</div>
 	);
 }
