@@ -1,7 +1,6 @@
 import React from "react";
 import "./App.css";
 import HighScoreTable from "./HighScoreTable";
-import SortButton from "./SortButton";
 
 function App() {
 	return (
