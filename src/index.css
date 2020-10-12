@@ -1,0 +1,58 @@
+body {
+	margin: 0;
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+		"Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+		sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+code {
+	font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+		monospace;
+}
+
+.App {
+	border: 2px solid blue;
+	margin: 10px 30%;
+}
+h1 {
+	color: skyblue;
+	font: "Courier New";
+}
+.playerScore {
+	display: inline;
+
+	padding-left: 40px;
+}
+
+.playerScore:last-child {
+	color: black;
+	padding-left: 50px;
+}
+h3 {
+	padding: 0 10%;
+}
+
+table {
+	display: flex;
+	flex-direction: column;
+	border: 15px solid greenyellow;
+	align-items: center;
+	margin: 1% 10%;
+}
+td {
+	border: 1px solid black;
+	width: 90%;
+
+	font-size: large;
+	font-weight: 400;
+	margin: 0 3%;
+}
+td:last-child {
+	margin-bottom: 5%;
+}
+th {
+	color: skyblue;
+	font-size: 27px;
+}
