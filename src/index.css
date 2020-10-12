@@ -27,11 +27,18 @@ h1 {
 }
 
 .playerScore:last-child {
-	color: black;
-	padding-left: 50px;
+color:black;
+
+}
+.playerScore:first-child {
+	color:black;
+		margin: 0 60% 0 0;
+
+
 }
 h3 {
-	padding: 0 10%;
+	
+	margin: 0 0 0 40%;
 }
 
 table {
