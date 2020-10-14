@@ -63,3 +63,8 @@ th {
 	color: skyblue;
 	font-size: 27px;
 }
+.isSelected{
+
+	font-weight: bolder;
+	color :red;
+}
