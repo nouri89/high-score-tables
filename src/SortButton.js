@@ -1,12 +1,13 @@
 import React from "react";
-
+import Ascendantly  from "./Ascendantly"
+import Descendantly from "./Descendantly"
 function SortButton(props) {
 	function handelClick() {
-		if (props.scoreOrder === "ascending") {
-			props.alterOrder("descending");
-		} else if (props.scoreOrder === "descending") {
-			props.alterOrder("ascending");
-		}
+		
+		props.scoreOrder === "ascending"
+			? props.alterOrder("descending")
+			: props.alterOrder("ascending");
+
 	}
 	return (
 		<button
@@ -22,7 +23,8 @@ function SortButton(props) {
 				width: "80%",
 			}}
 		>
-			Click to Sort the Score Ascendantly / Descendantly{" "}
+			Click to Sort the Score <Ascendantly state={props.scoreOrder} />
+			<Descendantly state={props.scoreOrder} />
 		</button>
 	);
 }
